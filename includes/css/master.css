@@ -1,0 +1,1146 @@
+/* CSS Document */
+
+/* Font Face
+--------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'aller_rg-webfont';
+    src: url('../../includes/fonts/aller_rg-webfont.eot');
+	src: url('../../includes/fonts/aller_rg-webfont.eot?#iefix') format('eot'),
+		 url('../../includes/fonts/aller_rg-webfont.svg') format('svg'),
+         url('../../includes/fonts/aller_rg-webfont.woff') format('woff'),
+         url('../../includes/fonts/aller_rg-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aller_bd-webfont';
+    src: url('../../includes/fonts/aller_bd-webfont.eot');
+	src: url('../../includes/fonts/aller_bd-webfont.eot?#iefix') format('eot'),
+		 url('../../includes/fonts/aller_bd-webfont.svg') format('svg'),
+         url('../../includes/fonts/aller_bd-webfont.woff') format('woff'),
+         url('../../includes/fonts/aller_bd-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+	
+	h1, h2, #message-bar, #runner ul li, ul#navigation li a, #appointment-cta-contact li, #main p, #sidebar, #footer {
+		font-family: "aller_rg-webfont";
+	}
+
+/* Global Styles
+--------------------------------------------------------------- */
+
+* {	margin: 0; padding: 0; }
+
+body, html { min-height: 101%; }
+
+body {
+	text-align: left;
+	font-size: 62.5%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	background: url(../../images/layout/bg.jpg) top repeat #fff;
+}
+
+a {
+	-moz-transition: all ease 300ms;
+	-o-transition: all ease 350ms;
+	-ms-transition: all ease 350ms;
+	-webkit-transition: all ease 350ms;
+}
+
+a:link, a:visited, a:focus {
+	text-decoration: underline;
+	outline: none;
+	color: #595959;
+}
+
+	a:focus {
+		outline: dotted 1px;
+	}
+
+a:hover, a:active {
+	color: #cd2c06;
+	text-decoration: underline;
+}
+
+a img {
+	float: left;
+	border: none;
+}
+
+/* For screen readers */		
+#header a.skip-to-content {
+	display: none;
+}
+
+/* H1/H2/H3 Styles
+--------------------------------------------------------------- */
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+	h1 {
+		font-size: 2.1em;
+		color: #000;
+		line-height: 1.1em;
+	}
+	
+	h2 {
+		font-size: 2.1em;
+		color: #333;
+		padding: 15px 0px 0px 0px;
+	}
+	
+	h3 {
+		font-size: 1.3em;
+		color: #666;
+	}
+	
+	#main p.bold {
+		font-weight: bold;
+		font-size: 1.0em;
+		font-family: "aller_bd-webfont";
+	}
+
+/* Container Styles
+--------------------------------------------------------------- */
+
+#outer-container {
+	width: 100%;
+	float: left;
+}
+
+
+
+	#container {
+		width: 960px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		font-size: 1.2em;
+		background: #09C;
+		margin-top: 30px;
+		background: url(../../images/layout/contBg.jpg) repeat-x top #FFF;
+		-moz-box-shadow: 0 0 5px 5px #888;
+		-webkit-box-shadow: 0 0 5px 5px#888;
+		box-shadow: 0 3px 3px 3px #e8e6e6;
+	}
+		
+/* Header Styles
+--------------------------------------------------------------- */
+
+#header {
+	float: left;
+	width: 960px;
+	margin: 3px 0px 0px 0px;
+}
+
+	#logo {
+		float: left;
+		-moz-transition: all ease 350ms;
+		-o-transition: all ease 350ms;
+		-ms-transition: all ease 350ms;
+		-webkit-transition: all ease 350ms;
+			
+	}
+	
+	#logo:hover {
+		opacity: 0.8;
+	}
+	
+	#cta-top-right {
+		float: right;
+		width: 600px;		
+		padding: 5px 0 0 0;
+		text-align: right;
+		height: 125px;
+		font-size: 1.6em;
+		color: #777;
+	}
+	
+		#cta-top-right .phone {
+			font-size: 1.2em;
+		}
+		
+		#cta-top-right .phone span {
+			color: #222;
+		}
+		
+	a#logo {
+		height: 140px;
+		width: 170px;
+		border-bottom: #c3c3c3 1px solid;
+		margin: 0px 0px 0px 33px;
+		padding: 20px 0px 0px 0px;
+	}
+	
+/* Horizontal Navigation Styles
+--------------------------------------------------------------- */
+
+ul#navigation {
+	float: right;
+	width: 747px;
+	padding: 0px 10px 0px 0px;
+}
+
+	ul#navigation li {
+		display: inline;
+		list-style: none;
+		float: left;
+		background: none;
+	}
+		  
+		ul#navigation li a {
+			float: left;
+			background: #fff;
+			color: #000;
+			text-decoration: none;
+			line-height: 1em;
+			padding: 64px 10px 10px 10px;
+			margin: 0px 0px 0px 0px;
+			font-size: 1.0em;
+			width: 73px;
+			height: 86px;
+			text-align: center;
+			border-bottom: #c3c3c3 1px solid;
+			-moz-transition: all ease 300ms;
+			-o-transition: all ease 350ms;
+			-ms-transition: all ease 350ms;
+			-webkit-transition: all ease 350ms;
+		}
+		
+		ul#navigation li a:hover {
+				background: #eaeaea;
+				color: #7a7a7a;
+				padding: 60px 10px 10px 10px;
+				height: 90px;
+			}
+			
+			ul#navigation li a span {
+				display: block;
+			}
+		
+		ul#navigation li a.laparoscopic-procedures-a {
+			background: url(../../images/layout/dropdown.png) 45px 100px no-repeat;
+		}
+		
+		ul#navigation li a.laparoscopic-procedures-a:hover {
+			background: url(../../images/layout/dropdown.png) #eaeaea 45px 120px no-repeat;
+		}
+	
+			
+			
+			
+/* Laparoscopic Dropdown Bar Styles
+--------------------------------------------------------------- */
+			
+			
+#laparoscopic-dropdown {
+	position:absolute;
+	top:163px;
+	left:327px;
+	background: #FFF;
+	z-index:200;
+	width:220px;
+	border:1px solid #ccc;
+	display: none;
+}
+
+	#laparoscopic-dropdown li {
+		list-style:none;
+	}
+	
+		#laparoscopic-dropdown li a {
+			padding:10px;
+			float:left;
+			width:200px;
+			font-size:1.2em;
+			border-bottom:1px dotted #ccc;
+			text-decoration:none;
+			font-family: Arial, Helvetica, sans-serif;
+			color: #000;
+			text-align:center;
+		}
+		
+		#laparoscopic-dropdown li a:hover {
+			background:#f6f6f6;
+		}
+			
+/* Message Bar Styles
+--------------------------------------------------------------- */	
+			
+			#message-bar {
+				width: 890px;
+				height: 40px;
+				padding: 20px 0px 0px 0px;
+				font-size: 1.6em;
+				text-align: center;
+				background: #fff;
+				clear: both;
+				border-bottom: #c3c3c3 1px solid;
+				margin: 0px auto 0px auto;
+			}
+		
+/*  Runner Styles
+--------------------------------------------------------------- */
+
+#runner {
+	float: left;
+	width: 593px;
+	height: 275px;
+	background: url(../../images/imgmain/index.jpg) no-repeat;
+	margin: 10px 0;
+}
+
+#runner ul {
+	position: relative;
+	left: 270px;
+	top: 60px;
+	width: 300px;
+}
+
+#runner ul li {
+	font-size: 1.1em;
+	line-height: 25px;
+	list-style: outside;
+}
+
+#contact #runner {
+	float: left;
+	width: 895px;
+	height: 275px;
+	background: url(../../images/imgmain/contact.jpg) no-repeat;
+	margin: 10px 0;
+}
+
+	#imgmain {
+		float: left;
+	}
+	
+.nivoSlider {
+    position:relative;
+    background:url(images/loading.gif) no-repeat 50% 50%;
+}
+.nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+.nivoSlider a {
+    border:0;
+    display:block;
+}
+
+nivo-caption {
+	position: absolute;
+	bottom: 0px;
+}
+	
+/*  Contact Runner Styles
+--------------------------------------------------------------- */
+	
+#contact #runner {
+}
+
+#contact #runner #contact-runner-left {
+	width: 427px;
+	float: left;
+}
+
+#contact #runner #contact-runner-right {
+	width: 435px;
+	height: 270px;
+	float: right;
+}
+
+#contact #runner #contact-runner-left p#email-runner {
+	flat: left;
+	margin: 100px 0px 0px 173px;
+	font-size: 1.1em;
+	
+	-moz-transition: all ease 300ms;
+	-o-transition: all ease 350ms;
+	-ms-transition: all ease 350ms;
+	-webkit-transition: all ease 350ms;
+}
+
+#contact #runner #contact-runner-left p a {
+	text-align: center;
+	display: block;
+	height: 45px;
+	width: 130px;
+	padding: 30px 0px 0px 0px;
+	background: url(../../images/layout/email-p-bg.jpg) no-repeat center top;
+}
+
+#contact #runner #contact-runner-left p a span {
+	display: block;
+	text-align: center;
+}
+
+#contact #runner #contact-runner-right h1 {
+	position: relative;
+	top: 45px;
+	left: 0px;
+}
+
+#contact #runner #contact-runner-right p {
+	position: relative;
+	top: 40px;
+	left: 0px;
+	width: 355px;
+	padding: 10px 0px 5px 0px;
+}
+
+#contact #runner #contact-runner-right p#phone-runner {
+	font-size: 1.7em;
+	background: url(../../images/layout/contact-runner-phone-bg.png) no-repeat left;
+	padding: 0px 0px 0px 40px;
+	color: #006a16;
+}
+			
+/* Main Styles
+--------------------------------------------------------------- */
+
+#main {
+	float: right;
+	width: 590px;
+	padding: 10px 33px 0px 0px;
+	font-size: 1.1em;
+	line-height: 1.6em;
+}
+
+#contact #main {
+	width: 895px;
+	float: right;
+	padding: 10px 33px 0px 0px;
+	font-size: 1.1em;
+	line-height: 1.6em;
+}
+
+	#main p {
+		margin: 10px 0px 10px 0px;
+		font-size: 0.9em;
+		color: #595959;				
+	}
+	
+	#main p.bold {
+		margin: 10px 0px 10px 0px;
+		font-size: 0.9em;
+		color: #595959;				
+	}
+	
+	#main h1 {
+		margin: 25px 0px 0px 0px;
+	}
+	
+	#main ul {
+		margin: 10px 0;
+	}
+	
+	#main img {
+		float: left;
+		padding: 10px 20px 10px 0px;
+	}
+	
+	#index #main img {
+		float: left;
+		padding: 15px 20px 10px 0px;
+	}
+	
+	
+	
+		#main ul li {
+			padding: 4px 0 4px 33px;
+			list-style: none;
+			background: url(../../images/misc/tick.png) left center no-repeat;
+		}
+		
+	#main .quote {
+		height: 48px;
+		padding: 5px 20px 0px 20px;
+		margin: 0px 0px 10px 0px;
+		border-top: 1px #c3c3c3 solid;
+		border-bottom: 1px #c3c3c3 solid;
+		font-size: 1.7em;
+		color: #595959;
+		float: left;
+		text-align: center;
+		width: 400px;
+	}
+
+/* Sidebar Styles
+--------------------------------------------------------------- */
+		
+		#sidebar {
+			float: left;
+			width: 272px;
+			padding: 19px 0px 0px 33px;
+		}
+		
+		/* Appointment CTA Styles
+		--------------------------------------------------------------- */
+		
+		#sidebar #appointment-cta {
+			width: 211px;
+			height: 295px;
+			background: #eaeaea url(../../images/layout/sidebar-bg.jpg) top repeat-x;
+			padding: 25px 30px 0px 33px;
+		}
+		
+		#sidebar #appointment-cta h2 {
+			text-align: center;
+			padding: 0px 0px 10px 0px;
+		}
+		
+		#sidebar #appointment-cta p {
+			color: #7a7a7a;
+			padding: 0px 0px 0px 7px;
+			line-height: 17px;
+			font-size: 11px;
+		}
+		
+			#sidebar #appointment-cta p {
+				margin: 10px 0px 0px 0px;
+			}
+			
+			#sidebar #appointment-cta span {
+				background: url(../../images/layout/appointment-cta-contact-bg.jpg) no-repeat;
+				padding: 7px 0px 0px 38px;
+				display: block;
+				margin: 1px 0px 5px 6px;
+				font-size: 1.2em;
+				
+				-moz-transition: all ease 300ms;
+				-o-transition: all ease 350ms;
+				-ms-transition: all ease 350ms;
+				-webkit-transition: all ease 350ms;
+			}
+			
+			#sidebar #appointment-cta span:hover {
+				background-position: 0px -24px;
+			}
+				
+		
+			#sidebar #appointment-cta p#appointment-first-p {
+				color: #000;
+				margin: 0px;
+			}
+
+			
+		/* Locations CTA Styles
+		--------------------------------------------------------------- */
+		
+		#sidebar #locations-cta {
+			width: 214px;
+			background: #eaeaea url(../../images/layout/sidebar-bg.jpg) top repeat-x;
+			padding: 20px 30px 20px 30px;
+			margin: 30px 0px 0px 0px;
+		}
+		
+		#sidebar #locations-cta h2 {
+			text-align: center;
+			padding: 0px 0px 10px 0px;
+		}
+		
+		#sidebar #locations-cta p {
+			color: #7a7a7a;
+			padding: 0px 0px 0px 6px;
+			line-height: 17px;
+			font-size: 11px;
+		}
+		
+		#sidebar #locations-cta .location-div {
+			width: 210px;
+			height: 121px;
+			margin: 15px 0px 15px 0px;
+			background: #FFF;
+			border: #FFF 5px solid;
+		}
+		
+		#sidebar #locations-cta .location-div .location-div-img {
+			width: 210px;
+			height: 121px;
+			overflow: hidden;
+			display: block;
+			
+		}
+		
+			#sidebar #locations-cta .location-div #location-one {
+				background: url(../../images/layout/location-1.jpg) no-repeat;
+			}
+			
+			#sidebar #locations-cta .location-div #location-two {
+				background: url(../../images/layout/location-2.jpg) no-repeat;
+			}
+			
+			#sidebar #locations-cta .location-div #location-three {
+				background: url(../../images/layout/location-3.jpg) no-repeat;
+			}
+		
+		#sidebar #locations-cta .location-div .location-div-img .text-container{
+			width: 200px;
+			background: #FFF;
+			position: relative;
+			top: 90px;
+			display: block;
+			opacity: 0.8;
+			padding: 8px 5px 10px 5px;
+			-moz-transition: all ease 350ms;
+			-o-transition: all ease 350ms;
+			-ms-transition: all ease 350ms;
+			-webkit-transition: all ease 350ms;
+		}
+		
+			#sidebar #locations-cta .location-div .location-div-img .text-container:hover {
+			top: 30px;
+		}
+		
+		#sidebar #locations-cta .location-div .location-div-img .text-container p {
+			color: #000;
+			
+		}
+		
+		#sidebar #locations-cta .location-div .location-div-img .text-container p span {
+			display: block;
+			font-size: 1.4em;
+			padding: 0px 0px 10px 0px;
+		}
+		
+		#sidebar #locations-cta .location-div .location-div-img .text-container a.directions {
+			display: block;
+			font-side: 1.0em;
+		}
+		
+
+/* Footer Styles
+--------------------------------------------------------------- */
+
+
+	#footer {
+		clear: both;
+		width: 960px;
+		color: #333;
+		margin: 20px auto;
+		padding: 20px 0 20px 0;
+		font-size: 1.0em;
+		background: #CCC;
+	}
+
+	#footer p.title {
+		font-weight: bold;
+		color: #111;
+		padding: 3px 0;
+		font-size: 1.4em;
+	}
+		
+	#footer li {
+		list-style: none;
+	}
+	
+	#footer a {
+		white-space: nowrap;
+		color: #0066CC;
+		text-decoration: none;
+	}
+		
+		#footer a:hover {
+			color: #000;
+			text-decoration: underline;
+		}
+
+/* Footer Column Styles
+--------------------------------------------------------------- */
+
+#footer .col {
+	float: left;
+	width: 280px;
+}
+
+	#footer p {
+		line-height: 1.75em;
+	}
+	
+	#footer .col ul {
+		float: left;
+	}
+	
+		#footer .col ul li {
+			display: block;
+			padding: 3px 0;
+		}
+	
+		#footer .col ul li.index-li,
+		#footer .col ul li.contact-li {
+			display: none;
+		}
+		
+#footer #footer-services {
+	margin: 0px 0px 0px 120px;
+}
+		
+		
+/* Footer Bottom Styles
+--------------------------------------------------------------- */	
+
+	#footer #footer-bottom {
+		clear: both;
+		width: 940px;
+		float: left;
+		margin: 30px 0 0 0;
+		text-align: center;
+	}
+
+/* Float Styles
+--------------------------------------------------------------- */
+
+.left, .img-left {
+	float: left;
+}
+
+	.img-left {
+		margin: 10px 10px 10px 0;
+	}
+
+.right, .img-right {
+	float: right;
+} 
+
+	.img-right {
+		margin: 10px 0 10px 10px;
+	}
+
+	
+/* Generic Styles
+--------------------------------------------------------------- */
+
+.clearfix {
+	clear: both;
+}
+
+/* Callback Form Styles
+--------------------------------------------------------------- */
+
+#callback-form {
+}
+
+	#callback-form .botBuster {
+		display: none;
+	}
+	
+	#callback-form #results ul li {
+		list-style: none;
+		margin:0px;
+		padding: 2px 0px 2px 25px;
+		background: url(../../images/misc/form-error.png) center left no-repeat;
+	}
+
+/* Contact Table Styles
+--------------------------------------------------------------- */
+div#form {
+	float: left;
+	width: 830px;
+	padding: 0px 0px 10px 0px;
+}
+	
+	#contactForm fieldset {
+		border: none;
+		clear: both;
+	}
+	
+/* -- Contact Form Left */
+	
+	#contactForm #contactFormLeft {
+		width: 435px;
+		height: 140px;
+		float: left;
+	}
+	
+	/* -- Contact Details */
+	
+		#contactForm fieldset#contactDetails label {
+			width: 180px;
+			float: left;
+			padding: 5px 0px 5px 0px;
+			display: block;
+			color: #cc2600;
+		}
+		
+		#contactForm fieldset#contactDetails input {
+			width: 180px;
+			padding: 7px 5px;
+			background: #EFF1F0;
+			border: 1px solid #ddd;
+			border-top: 1px solid #ccc;
+			float: left;
+			border-radius: 2px;
+		}
+		
+		#contactForm fieldset#contactDetails input:focus,
+		#contactForm textarea:focus {
+			border: 1px solid #0F76C3;
+		}
+		
+		#contactForm fieldset .interestedInLeft input:focus,
+		#contactForm fieldset .interestedInRight input:focus {
+			outline: dotted 1px #333;
+		}
+		
+		#contactForm fieldset#contactDetails .contactDetailsLeft,
+		#contactForm fieldset#contactDetails .contactDetailsRight {
+			width: 190px;
+			float: left;
+			padding: 0px 13px 0px 0px;
+		}
+		
+	/* -- Interested In */
+	
+	#contactForm p#whatareyoulookingfor {
+		font-size: 1.1em;
+		color: #cc2600;
+		padding: 5px 0px 0px 0px;
+		margin: 0px;
+		width: 390px;
+	}
+	
+	#looking-for {
+		width: 390px;
+	}
+	
+	#contactForm .interestedInLeft,
+	#contactForm .interestedInRight {
+		width: 180px;
+		float: left;
+		padding: 0px;
+	}
+	
+		#contactForm .interestedInLeft label,
+		#contactForm .interestedInRight label {
+			padding: 5px 0px;
+			display: block;
+			width: 190px;
+		}
+		
+		#contactForm .interestedInLeft span {
+			display: block;
+			padding: 0px 0px 0px 16px;
+		}
+		
+	/* -- Enquiry */
+	
+	#contactForm #contactFormRight {
+		float: left;
+		height: 140px;
+	}
+	
+		#contactForm label.enquiry {
+			padding: 0px 0px 5px 0px;
+			display: block;
+			color: #CC2600;
+			clear: both;
+		}
+		
+		#contactForm textarea {
+			padding: 10px;
+			width: 870px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 1em;
+			background: #EFF1F0;
+			border: 1px solid #ddd;
+			border-radius: 3px;
+		}
+		
+		#contactForm .submit {
+			display: block;
+			margin-top: 10px;
+			padding: 5px 0px;
+			clear: both;
+			width: 100px;
+			float: left;
+		}
+
+#form #results {
+	font-size:1.0em;
+	color: #7F2D0F;
+	font-weight: bold;
+	float:left;
+	padding:0px;
+	margin:0px;
+}
+
+	#contact #form #results ul {
+		float:left;
+		padding:0px;
+		margin:10px;
+		}
+
+	#form #results li {
+		list-style: none;
+		margin:0px;
+		padding: 8px 0px 8px 25px;
+		background: url(../../images/misc/form-error.png) center left no-repeat;
+	}
+	
+/* -------------- Hide Bot Buster */
+
+div#form fieldset.botBuster,
+div#callbackform #callbackBotBuster {
+	display: none;
+}
+
+
+
+
+
+
+/* -------------- jQuery Validation */
+ .formError { z-index: 990; }
+    .formError .formErrorContent { z-index: 991; }
+    .formError .formErrorArrow { z-index: 996; }
+    
+    .formErrorInsideDialog.formError { z-index: 5000; }
+    .formErrorInsideDialog.formError .formErrorContent { z-index: 5001; }
+    .formErrorInsideDialog.formError .formErrorArrow { z-index: 5006; }
+
+
+
+
+.inputContainer {
+	position: relative;
+	float: left;
+}
+
+.formError {
+	position: absolute;
+	top: 300px;
+	left: 300px;
+	display: block;
+	cursor: pointer;
+}
+
+.ajaxSubmit {
+	padding: 20px;
+	background: #55ea55;
+	border: 1px solid #999;
+	display: none
+}
+
+.formError .formErrorContent {
+	width: 100%;
+	background: #ee0101;
+	position:relative;
+	color: #fff;
+	width: 150px;
+	font-size: 11px;
+	border: 2px solid #ddd;
+	padding: 4px 10px 4px 10px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+.greenPopup .formErrorContent {
+	background: #33be40;
+}
+
+.blackPopup .formErrorContent {
+	background: #393939;
+	color: #FFF;
+}
+
+.formError .formErrorArrow {
+	width: 15px;
+	margin: -2px 0 0 13px;
+	position:relative;
+}
+body[dir='rtl'] .formError .formErrorArrow,
+body.rtl .formError .formErrorArrow {
+	margin: -2px 13px 0 0;
+}
+
+.formError .formErrorArrowBottom {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	margin: 0px 0 0 12px;
+	top:2px;
+}
+
+.formError .formErrorArrow div {
+	border-left: 2px solid #ddd;
+	border-right: 2px solid #ddd;
+	font-size: 0px;
+	height: 1px;
+	background: #ee0101;
+	margin: 0 auto;
+	line-height: 0;
+	font-size: 0;
+	display: block;
+}
+
+.formError .formErrorArrowBottom div {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.greenPopup .formErrorArrow div {
+	background: #33be40;
+}
+
+.blackPopup .formErrorArrow div {
+	background: #393939;
+	color: #FFF;
+}
+
+.formError .formErrorArrow .line10 {
+	width: 15px;
+	border: none;
+}
+
+.formError .formErrorArrow .line9 {
+	width: 13px;
+	border: none;
+}
+
+.formError .formErrorArrow .line8 {
+	width: 11px;
+}
+
+.formError .formErrorArrow .line7 {
+	width: 9px;
+}
+
+.formError .formErrorArrow .line6 {
+	width: 7px;
+}
+
+.formError .formErrorArrow .line5 {
+	width: 5px;
+}
+
+.formError .formErrorArrow .line4 {
+	width: 3px;
+}
+
+.formError .formErrorArrow .line3 {
+	width: 1px;
+	border-left: 2px solid #ddd;
+	border-right: 2px solid #ddd;
+	border-bottom: 0 solid #ddd;
+}
+
+.formError .formErrorArrow .line2 {
+	width: 3px;
+	border: none;
+	background: #ddd;
+}
+
+.formError .formErrorArrow .line1 {
+	width: 1px;
+	border: none;
+	background: #ddd;
+}
+
+
+/* Cookie Pop
+--------------------------------------------------------------- */	
+
+.cc-cookies { 
+	position:fixed; 
+	width: 90%; 
+	left: 0; 
+	top: 0; 
+	padding: 0.75em 5%;
+	background: #fff; 
+	background: rgba(242,242,242,0.95); 
+	color: #333; 
+	font-size: 11px;
+	line-height: 18px; 
+	text-shadow: 0 1px 0 #eee;
+	z-index: 99999; 
+	text-align: center; 
+	border-top: 1px solid #ddd; 
+
+}
+.cc-cookies a, .cc-cookies a:hover {
+	color: #E4121B;
+	text-decoration: underline;
+
+}
+.cc-cookies a:hover {
+	text-decoration: none;
+}
+
+.cc-overlay {
+	height: 100%;
+	padding-top: 25%; 
+}
+
+.cc-cookies-error { 
+	float: left;
+	width: 90%; 
+	text-align: center; 
+	margin: 1em 0 2em 0; 
+	background: #fff;
+	padding: 2em 5%; 
+	border: 1px solid #ccc; 
+	font-size: 18px; color: #333;
+}
+
+.cc-cookies a.cc-cookie-accept, .cc-cookies-error a.cc-cookie-accept, .cc-cookies a.cc-cookie-decline, .cc-cookies-error a.cc-cookie-decline, .cc-cookies a.cc-cookie-reset {
+	display: inline-block; 
+	color: #fff; 
+	text-decoration: none; 
+	background: #7DAF3B; 
+	padding: 0.5em 0.75em;
+	margin: 0 10px;
+	border-radius: 3px; 
+	box-shadow: 0 0 2px rgba(0,0,0,0.25); 
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.35);
+	-o-transition: background 0.5s ease-in; 
+	-webkit-transition: background 0.25s ease-in; 
+	-moz-transition: background 0.25s ease-in; 
+	font-size: 0.9em;
+}
+
+.cc-cookies a.cc-cookie-decline, .cc-cookies-error a.cc-cookie-decline {
+	background: #af3b3b;
+	margin-left: 0.5em;
+}
+
+.cc-cookies a.cc-cookie-reset {
+	background: #f15b00;
+}
+
+.cc-cookies a:hover.cc-cookie-accept, .cc-cookies-error a:hover.cc-cookie-accept, .cc-cookies a:hover.cc-cookie-decline, .cc-cookies-error a:hover.cc-cookie-decline, .cc-cookies a:hover.cc-cookie-reset  {
+	background: #000;
+	-o-transition: background 0.5s ease-in;
+	-webkit-transition: background 0.25s ease-in;
+	-moz-transition: background 0.25s ease-in;
+}
+
+.cc-cookies-error a.cc-cookie-accept, .cc-cookies-error a.cc-cookie-decline {
+	display: block;
+	margin-top: 1em;
+}
+
+.cc-cookies.cc-discreet {
+	width: auto;
+	padding: 0.5em 1em;
+	left: auto;
+	top: auto;
+}
+
+@media screen and (max-width: 768px) {
+.cc-cookies a.cc-cookie-accept, .cc-cookies a.cc-cookie-decline, .cc-cookies a.cc-cookie-reset { display: block; margin: 1em 0; }
+}
+
+@media screen and (max-width: 480px) {
+.cc-cookies { position: relative;  }
+}

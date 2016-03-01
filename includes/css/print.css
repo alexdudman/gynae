@@ -1,0 +1,36 @@
+/* CSS Document */
+
+/* Remove unwanted elements */
+
+#navigation,
+#footer .col,
+#imgmain {
+	display: none;
+}
+
+h1,	h2 {
+	color: #000 !important;
+}
+
+/* Increase font size for main copy */
+#main {
+	font-size: 1.4em;
+}
+
+/* Reset any borders & backgrounds on the header */	
+#header {
+	border: none;
+	background: none;
+}
+	
+/* Ensure the content spans the full width */
+#container, #content {
+	float: none;
+	width: 100%; 
+	margin: 0;	
+}
+	
+/* Improve colour contrast of links */
+a:link, a:visited {
+	color: #781351;
+}	

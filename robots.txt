@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Allow: http://www.premiergynae.co.uk

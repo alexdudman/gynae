@@ -1,0 +1,1 @@
+<meta name="description" content="Consultant Gynaecologist in Nottingham Mr Srini Vindla, offers a wide ranging personalised service in Laparoscopic Procedures, hysteroscopic Procedures and more. Consulting at Nottingham Road, the Park Hospital and Nottingham Woodthorpe Hospital." />
